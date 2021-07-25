@@ -12,19 +12,18 @@
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <h5 class="card-title tt">{{ hood.name }} ({{hood.location}})
-                </h5>
-                <h6 class="card-text">
-                  <span><strong>{{hood.members.count}}</strong> Member{{hood.members.count|pluralize}}</span>
+                <h5 class="card-title tt" style="font-size: 30px; font-weight: 900;">{{ hood.name }} ({{hood.location}})</h5>
+                <h6 class="card-text" style="color: black; font-size:17px;">
+                  <span ><strong>{{hood.members.count}}</strong> Member{{hood.members.count|pluralize}}</span>
                   | <strong>{{ hood.business.count }}</strong> Businesses | <strong>
                     {{ hood.hood_post.count }}</strong> Post{{ hood.hood_post.count|pluralize }}
                 </h6>
-                <p class="card-text">{{hood.description}}</p>
-                <p class="card-text"><span class="text-info">Police Contact</span>
+                <p class="card-text"style="color: black; font-size:20px;">{{hood.description}}</p>
+                <p class="card-text" style="color: black; font-size:15px;"><span class="text-info">Police Contact</span>
                   &nbsp;<strong>{{hood.police_number}}</strong> |
-                  <span class="text-info">Hospital Contact</span> <strong>{{hood.healthcenter_number}}</strong></p>
-                <p class="card-text">Hood Admin: <small class="">
-                    {{ hood.admin.user.username }}</small></p>
+                  <span class="text-info" style="color: black;">Hospital Contact</span> <strong>{{hood.healthcenter_number}}</strong></p>
+                <p class="card-text" style="color: black;">Hood Admin: 
+                    {{ hood.admin.user.username }}</p>
               </div>
             </div>
           </div>
@@ -46,11 +45,12 @@
             
               <div class="card business mb-4">
                 <div class="card-body">
-                  <h6 class="card-title">{{busines.name}}:<span>{{busines.email}}</span>
-                  </h6>
-                  <p class="card-text">{{busines.description}}</p>
-                  <p class="card-text">Owner: <small class="text-info">
-                      {{ busines.user.user.username|title }}</small></p>
+                  <h6 class="card-title" style="font-size: 23px; font-weight: 900;">{{busines.name}}</h6>
+                  <span>{{busines.email}}</span>
+                  
+                  <p class="card-text" style="color: black;">{{busines.description}}</p>
+                  <p class="card-text"style="color: black;">Owner: 
+                      {{ busines.user.user.username|title }}</p>
                 </div>
           
             </div>
@@ -65,13 +65,13 @@
               
               <div class= "card post">
                   <div class="panel-header">
-                    <h5 class="card-title text-center">{{post.title}}</h5>
+                    <h5 class="card-title text-center" style="font-weight: 900;">{{post.title}}</h5>
                   </div>
                   <div class="panel-body">
-                    <p class="card-text">" {{post.post}} "
+                    <p class="card-text"> {{post.post}} 
                     </p>
-                    <p class="card-text">By: <small class="text-info">
-                        {{ post.user.user.username|title }}</small> <small
+                    <p class="card-text">By: 
+                        {{ post.user.user.username|title }}<small
                         style="float:right">{{post.date|date}}</small>
                     </p>
                   </div>
@@ -85,9 +85,9 @@
 
         <hr>
         <div class="modal fade" id="Business" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
+          aria-hidden="true" >
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content"  style="background-color: #e29d93;">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center">Add Business</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

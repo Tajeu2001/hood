@@ -6,6 +6,12 @@ body {
   background-blend-mode:darken;
 }
 
+.home {
+  font-weight: 900;
+  margin-left: 5rem;
+  font-size: 30px;
+}
+
 .add {
   margin-top: 5rem;
   margin-left: 30%;

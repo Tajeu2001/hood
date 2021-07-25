@@ -11,6 +11,19 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import dj_database_url
+import django_heroku
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+
+cloudinary.config( 
+    cloud_name = "instagram-santa", 
+    api_key = "891768422865438", 
+    api_secret = "GokPH3gkx3sgDlc3mF7YhXbZs2g",
+    secure = True
+    )
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,6 +53,7 @@ INSTALLED_APPS = [
     'hood_app',
     'bootstrap4',
     'crispy_forms',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
