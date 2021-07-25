@@ -5,9 +5,9 @@ from .models import Neighbourhood, Profile, Post, Business
 
     
 class Registration(UserCreationForm):
-  email = forms.EmailField()
+    email = forms.EmailField()
 
-  class Meta:
+class Meta:
     model = User
     fields = ['username','email','password1','password2']
 
