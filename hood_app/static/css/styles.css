@@ -13,28 +13,35 @@ body {
 }
 
 .index-hood {
-  background-color: rgba(0, 0, 0, 0.76);
-  color: white;
+  background-color: #e29d93;
+  color:black;
   margin-top: 3rem;
 }
 
 .hood-form {
-  background-color: rgba(0, 0, 0, 0.712);
-  color:rgb(253, 243, 224);
+  background-color: #e29e93;
+  color:black;
   padding: 10px;
 
 }
 
 .newhood {
   margin-top: 5rem;
-  color:white
+  color:black;
 }
 
 .hood-info {
-  background-color: rgba(0, 0, 0, 0.76);
-  color: white;
+  background-color:  #e29e93;
+  color: black;
   margin-top: 5rem;
   font-size: 20px;
 
 }
 
+.post {
+  background-color:  #e29e93;
+}
+
+.business {
+  background-color:  #e29e93;
+}
