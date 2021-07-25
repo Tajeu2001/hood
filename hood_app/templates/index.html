@@ -3,17 +3,14 @@
 {% block content %}
 
 <div class="page2">
-  <div class="container-fluid">
-    <div class="container sanches m-5 add" >
-      <a href="{% url 'new-hood' %}" class="btn btn-sm btn-info mb-2">Add New
-        Neighbourhood</a>
+  <div class="container">
+    <div class="container  add" >
+      <a style="font-size: 15px;" href="{% url 'new-hood' %}" class="btn btn-sm btn-info mb-2">Add New Neighbourhood</a>
     </div>
     <div class="row">
-
-      {% for hood in all_hoods %}
-
-      <div class="col-md-4">
-        <div class="card mb-4" style="height:340px">
+    {% for hood in all_hoods %}
+      <div class="col-md-5">
+        <div class="card mb-4 index-hood" style="height:340px">
           <h5 class="card-title">{{ hood.name }} ({{hood.location}}) <span class="ml-4">{{hood.members.count}}
               member{{hood.members.count|pluralize}}</span></h5>
           <img src="{{ hood.neighbourhood_logo.url }}" class="card-img-top" alt="{{ hood.name }}" height="180px">

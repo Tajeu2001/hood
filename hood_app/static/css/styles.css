@@ -8,5 +8,33 @@ body {
 
 .add {
   margin-top: 5rem;
+  margin-left: 30%;
   
 }
+
+.index-hood {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+  margin-top: 3rem;
+}
+
+.hood-form {
+  background-color: rgba(0, 0, 0, 0.712);
+  color:rgb(253, 243, 224);
+  padding: 10px;
+
+}
+
+.newhood {
+  margin-top: 5rem;
+  color:white
+}
+
+.hood-info {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+  margin-top: 5rem;
+  font-size: 20px;
+
+}
+
