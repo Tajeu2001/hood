@@ -57,12 +57,12 @@ Open the application on your browser `127.0.0.1:8000`.
 
 ### View of the application homepage
 
-![alt text]()
+![alt text](https://github.com/Tajeu2001/hood/blob/master/static/images/homepage-hood.png)
 
 ### View of the single hood page
 
 
-![alt text]()
+![alt text](https://github.com/Tajeu2001/hood/blob/master/static/images/single-hood.png)
 
 ## User Story
 
