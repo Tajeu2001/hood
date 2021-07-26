@@ -10,7 +10,7 @@
     <div class="row">
     {% for hood in all_hoods %}
       <div class="col-md-4">
-        <div class="card mb-4 index-hood" style="height:470px">
+        <div class="card mb-4 index-hood" style="height:420px">
           <h5 class="card-title" style="font-size: 18px;" >{{ hood.name }} ({{hood.location}}) <span class="ml-4"style="font-size: 18px;">{{hood.members.count}}
               member{{hood.members.count|pluralize}}</span></h5>
           <img src="{{ hood.neighbourhood_logo.url }}" class="card-img-top" alt="{{ hood.name }}" height="250px">
